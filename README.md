@@ -1,12 +1,65 @@
-# React + Vite
+# 📚 Reading List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de lista de lectura desarrollada con **React** y **Vite**.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicación permite visualizar una lista de libros disponibles y gestionar una lista de lectura personal. Puedes añadir libros a tu lista de lectura y eliminarlos cuando lo desees.
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Visualización de libros con portada, título y sinopsis.
+- Añadir libros a la lista de lectura.
+- Eliminar libros de la lista de lectura.
+- Estado global de la lista de lectura usando Context API y hooks personalizados.
+- Estilos con Bootstrap.
+
+## Estructura del proyecto
+
+├── public/
+├── src/
+│ ├── App.jsx
+│ ├── index.css
+│ ├── main.jsx
+│ ├── assets/
+│ ├── components/
+│ │ ├── Book.jsx
+│ │ ├── BooksList.jsx
+│ │ ├── MiniBook.jsx
+│ │ └── ReadingList.jsx
+│ ├── context/
+│ │ └── list.jsx
+│ ├── data/
+│ │ └── books.json
+│ └── hooks/
+│ └── useReadingList.js
+├── index.html
+├── package.json
+└── vite.config.js
+
+## Instalación
+
+1. Clona el repositorio.
+2. Instala las dependencias:
+
+   ```sh
+   npm install
+   ```
+
+3. Inicia el servidor de desarrollo:
+
+   ```sh
+   npm run dev
+   ```
+
+4. Abre http://localhost:5173 en tu navegador.
+
+Scripts
+
+- npm run dev -> Inicia el entorno de desarrollo.
+- npm run build -> Genera la build de producción.
+- npm run preview -> Previsualiza la build de producción.
+- npm run lint -> Ejecuta ESLint.
+
+Licencia
+MIT
